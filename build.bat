@@ -18,6 +18,7 @@ CALL :link zopflipng.exe
 GOTO :EOF
 
 :cl
+call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
 cl.exe -nologo -O1 /GL /GS- /I%CRT_INC_PATH% /I. -c /MD /DNDEBUG %*
 GOTO :EOF
 
